@@ -1,8 +1,11 @@
-export const Stat = ({ label, percentage }) => {
+import clsx from 'clsx';
+import css from './statistics.module.css';
+
+export const Stat = ({ label, percentage, backgroundColor }) => {
   return (
-    <li className="item">
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}%</span>
+    <li className={clsx(css.item)} style={{ backgroundColor }}>
+      <span className={clsx(css.label)}>{label}</span>
+      <span className={clsx(css.percentage)}>{percentage}%</span>
     </li>
   );
 };

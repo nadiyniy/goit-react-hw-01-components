@@ -11,7 +11,8 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '50%',
+        padding: 50,
+        height: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -19,10 +20,11 @@ export const App = () => {
         fontSize: 40,
         color: '#010101',
         outline: '1 px solid black',
+        gap: 100,
       }}
     >
       <Profile user={user} />
-      <Statistics stats={data} />
+      <Statistics title={'stata'} stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
     </div>

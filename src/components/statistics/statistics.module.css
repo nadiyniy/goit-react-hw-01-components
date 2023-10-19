@@ -1,0 +1,31 @@
+.statistics {
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.title {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid black;
+  background-color: aqua;
+}
+.statList {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 10px;
+  width: calc((100% - 20px) / 5);
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+}
+.item:last-child {
+  border-right: none;
+}
+.label {
+}
+.percentage {
+}
