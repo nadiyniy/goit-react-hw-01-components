@@ -1,11 +1,13 @@
-export const Trans = ({ id, type, amount, currency }) => {
+import { StyledTbody } from './Transaction.style';
+
+export const Trans = ({ type, amount, currency, $index }) => {
   return (
-    <tbody>
+    <StyledTbody $index={$index}>
       <tr>
         <td>{type}</td>
         <td>{amount}</td>
         <td>{currency}</td>
       </tr>
-    </tbody>
+    </StyledTbody>
   );
 };

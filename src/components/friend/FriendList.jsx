@@ -1,9 +1,10 @@
 import { Friend } from './Friend';
+import { StyledListUl } from './Friends.style';
 
 export const FriendList = ({ friends }) => (
-  <ul className="friend-list">
+  <StyledListUl className="friend-list">
     {friends.map(friend => {
       return <Friend {...friend} key={friend.id} />;
     })}
-  </ul>
+  </StyledListUl>
 );

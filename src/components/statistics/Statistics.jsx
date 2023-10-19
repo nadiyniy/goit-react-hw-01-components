@@ -31,5 +31,3 @@ export const Statistics = ({ title, stats }) => {
     </section>
   );
 };
-
-const StyleSection = styled.section''

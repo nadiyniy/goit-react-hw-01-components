@@ -1,8 +1,9 @@
 import { Trans } from './Trans';
+import { StyledheadTable } from './Transaction.style';
 
 export const TransactionHistory = ({ transactions }) => {
   return (
-    <table className="transaction-history">
+    <StyledheadTable>
       <thead>
         <tr>
           <th>Type</th>
@@ -11,9 +12,9 @@ export const TransactionHistory = ({ transactions }) => {
         </tr>
       </thead>
 
-      {transactions.map(transaction => {
-        return <Trans {...transaction} key={transaction.id} />;
+      {transactions.map((transaction, idx) => {
+        return <Trans $index={idx} {...transaction} key={transaction.id} />;
       })}
-    </table>
+    </StyledheadTable>
   );
 };

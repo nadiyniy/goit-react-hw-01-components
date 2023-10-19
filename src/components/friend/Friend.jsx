@@ -1,7 +1,12 @@
+import { StyledOnlineSpan } from './Friends.style';
+
 export const Friend = ({ avatar, name, isOnline }) => {
   return (
     <li className="item">
-      <span className="status"></span>
+      <StyledOnlineSpan
+        $isOnline={isOnline}
+        className="status"
+      ></StyledOnlineSpan>
       <img className="avatar" src={avatar} alt={name} width="48" />
       <p className="name">{name}</p>
     </li>
