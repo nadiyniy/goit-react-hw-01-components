@@ -1,6 +1,7 @@
 import { Stat } from './Stat';
 import clsx from 'clsx';
 import css from './statistics.module.css';
+import styled from 'styled-components';
 
 function getRandomColor() {
   const letters = '0123456789ABCDEF';
@@ -30,3 +31,5 @@ export const Statistics = ({ title, stats }) => {
     </section>
   );
 };
+
+const StyleSection = styled.section''
