@@ -1,8 +1,8 @@
 import { StyledTbody } from './Transaction.style';
 
-export const Trans = ({ type, amount, currency, $index }) => {
+export const Trans = ({ type, amount, currency, indexForBg }) => {
   return (
-    <StyledTbody $index={$index}>
+    <StyledTbody $index={indexForBg}>
       <tr>
         <td>{type}</td>
         <td>{amount}</td>

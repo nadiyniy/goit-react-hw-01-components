@@ -1,12 +1,11 @@
-import clsx from 'clsx';
 import css from './profile.module.css';
 
 export const Profile = ({ user }) => {
   const { username, tag, location, avatar, stats } = user;
 
   return (
-    <div className={clsx(css.profile)}>
-      <div className={clsx(css.description)}>
+    <div className={css.profile}>
+      <div className={css.description}>
         <img
           src={avatar}
           alt={username}
@@ -19,7 +18,7 @@ export const Profile = ({ user }) => {
         <p className="location">{location}</p>
       </div>
 
-      <ul className={clsx(css.stats)}>
+      <ul className={css.stats}>
         <li>
           <span className="label">Followers</span>
           <span className="quantity">{stats.followers}</span>

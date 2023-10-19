@@ -12,8 +12,8 @@ export const TransactionHistory = ({ transactions }) => {
         </tr>
       </thead>
 
-      {transactions.map((transaction, idx) => {
-        return <Trans $index={idx} {...transaction} key={transaction.id} />;
+      {transactions.map((transaction, i) => {
+        return <Trans indexForBg={i} {...transaction} key={transaction.id} />;
       })}
     </StyledheadTable>
   );
